@@ -1,0 +1,118 @@
+/* Common styles */
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+    margin: 0px;
+}
+h2{
+    font-size: 32px;
+}
+.container{
+    padding: 0 4%;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+input{
+    display: block;
+    width: 100%;
+}
+input[type='color']{
+    width: 100px;
+    height: 50px;
+    margin: 20px;
+}
+input[type='checkbox']{
+    display: inline;
+    width: 20px;
+    height: 20px;
+}
+label{
+    align-self: flex-start;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+textarea{
+    background-color: inherit;
+    border-style: none;
+    resize: none;
+    align-self: flex-start;
+    font-size: 16px;
+}
+.result_box{
+    width: 150px;
+    height: 150px;
+    background-color: #00ecec;
+}
+/* Border radius generator */
+.border-rarius-generator{
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Text shadow generator */
+.text-shadow-generator{
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.example{
+    font-size: 40px;
+}  
+
+/* Box shadow generator */
+.box-shadow-generator{    
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Button options generator */
+.button-form-generator{
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+}
+input[type='color']{
+    align-self: center;
+}
+
+
+/* Border generator */
+.colors{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.button_forms{
+    display: inline-flex;
+    justify-content: space-between;
+}
+.button{
+    height: 100px;
+    width: 200px;
+    align-self: center;
+    background-color: aquamarine;
+    margin: 5px auto 25px; 
+    /* изменияю нижеследующие характеристики */
+    border-width: 10px;
+    border-style: double;
+    border-color: aqua;
+    border-radius: 3px;
+    min-height: 100px;
+    min-width: 200px;
+    /* так же оставим выбор между прямоугольником, квадратом и кругом */
+}
+.button_decoration{
+    display: flex;
+    flex-direction: column;
+}
+input[type='text']{
+    height: 35px;
+}
