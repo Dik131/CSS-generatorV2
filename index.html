@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Border radius generator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>	
+	<div class="container">
+		<div class="border-rarius-generator">
+			<h2>Border-radius generator</h1>
+			<table>
+				<tr>
+					<td>
+						<label for="top_left">top-left</label>
+						<input id="top_left" type="range" min="0" max="75" step="1" value="75">
+					</td>
+					<td></td>
+					<td>
+						<label for="top_right">top-right</label>
+						<input id="top_right" type="range" min="0" max="75" step="1" value="75">
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<div class="result_box"></div>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<label for="bottom_left">bottom-left</label>
+						<input id="bottom_left" type="range" min="0" max="75" step="1" value="0">
+					</td>
+					<td></td>
+					<td>
+						<label for="bottom_right">bottom-right</label>
+						<input id="bottom_right" type="range" min="0" max="75" step="1" value="75">
+					</td>
+				</tr>
+			</table>
+			<label for="result_border_css">Результат</label><br>
+			<textarea id="result_border_css" rows="4" cols="60" readonly></textarea>
+		</div><hr>
+
+	<div class="text-shadow-generator">
+		<h2>Text-shadow generator</h1>			
+			<div class="example">Test text</div>
+			<label for="font_size">Размер шрифта</label><br>
+			<input id="font_size" type="range" min="10" max="60" step="1" value="40"><br>
+			<label for="offset_x">Смещение по оси x</label><br>
+			<input id="offset_x" type="range" min="-15" max="15" step="1" value="4"><br>
+			<label for="offset_y">Смещение по оси y</label><br>
+			<input id="offset_y" type="range" min="-15" max="15" step="1" value="-1"><br>
+			<label for="blur">Размытие</label><br>
+			<input id="blur" type="range" min="0" max="15" step="1" value="0"><br>			
+			<label for="color">Цвет</label><br>
+			<input type="color" value="#ff0000" id="color"><br>
+			<label for="opacity">Прозрачность</label><br>
+			<input id="opacity" type="range" min="0" max="1" step="0.01" value="1"><br>
+			<label for="resultHex">Результат, цвет в HEX</label><br>
+			<textarea id="resultHex" rows="4" cols='60' readonly></textarea><br>
+			<label for="resultRgba">Результат, цвет в RGBA</label><br>
+			<textarea id="resultRgba" rows="3" cols='60' readonly></textarea>
+	</div><hr>
+
+	<div class="box-shadow-generator">
+		<h2>Box shadow generator</h2>
+		<div class="result_box"></div><br>
+		<div class="shadow-checkbox">
+			<label for="inset">Тень внутри элемента?</label>
+    		<input type="checkbox" id="inset">
+		</div>
+		<br>
+		<label for="offset_x">Смещение по оси x</label><br>
+		<input id="offset_x" type="range" min="-25" max="25" step="1" value="0"><br>
+		<label for="offset_y">Смещение по оси y</label><br>
+		<input id="offset_y" type="range" min="-25" max="25" step="1" value="0"><br>
+		<label for="blur">Размытие</label><br>
+		<input id="blur" type="range" min="0" max="25" step="1" value="8"><br>
+		<label for="size">Растяжение</label><br>
+		<input id="size" type="range" min="-20" max="20" step="1" value="6"><br>
+		<input type="color" value="#000000"><br>
+		<label for="opacity">Прозрачность</label><br>
+		<input id="opacity" type="range" min="0" max="1" step="0.01" value="0.5"><br>
+		<label for="resultRgba">Result</label><br>
+		<textarea id="resultRgba" rows="3" cols='60' readonly></textarea>
+	</div>
+	<hr>
+	
+	<div class="button-form-generator">
+		<h2>Border generator</h2>
+		<button class="button"></button>
+			<select name="" id="" >
+				<option value="null">Free-form</option>
+				<option value="rectangle">Rectangle</option>
+				<option value="with_rounded_corners">With rounded corners</option>
+				<option value="square">Square</option>
+				<option value="round">Round</option>
+			</select>
+
+		<label for="radius">radius</label>
+		<input type="range"	id="radius">
+		<label for="button_size_X">Width</label>
+		<input type="range"	id="button_size_X">
+		<label for="button_size_Y">Height</label>
+		<input type="range"	id="button_size_Y">
+		<div class="colors">
+			<label for="button_color">button_color</label>
+			<input type="color"	id="button_color">
+			<label for="border_color">border_color</label>
+			<input type="color"	id="border_color">
+		</div>
+<br>
+		<label for="resultHex">Результат, цвет в HEX</label><br>
+		<textarea id="resultHex" rows="4" cols='60' readonly></textarea><br>
+		<label for="resultRgba">Результат, цвет в RGBA</label><br>
+		<textarea id="resultRgba" rows="3" cols='60' readonly></textarea>
+	</div>
+</div>	
+	<script src="js/main.js"></script>
+</body>
+</html>
